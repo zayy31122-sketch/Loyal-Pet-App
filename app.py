@@ -39,7 +39,7 @@ if choice == "📝 လူနာသစ်သွင်းရန်":
                 "ရောဂါလက္ခဏာ": symptoms, "ဆေးမှတ်တမ်း": treatment,
                 "နောက်တစ်ခေါက်ရက်ချိန်း": next_v_str
             }])
-            
+        
             data = conn.read()
             updated_df = pd.concat([data, new_row], ignore_index=True)
             conn.update(data=updated_df)
@@ -64,3 +64,4 @@ elif choice == "🔍 မှတ်တမ်းရှာရန်":
         st.dataframe(results)
     else:
         st.dataframe(data.tail(10))
+
