@@ -1,4 +1,4 @@
-import streamlit as st
+   import streamlit as st
 from streamlit_gsheets import GSheetsConnection
 import pandas as pd
 from datetime import datetime, timedelta
@@ -63,5 +63,5 @@ elif choice == "🔍 မှတ်တမ်းရှာရန်":
         results = data[data['ပိုင်ရှင်အမည်'].str.contains(search, na=False) | data['ဖုန်းနံပါတ်'].astype(str).str.contains(search, na=False)]
         st.dataframe(results)
     else:
-        st.dataframe(data.tail(10))
+        st.dataframe(data.tail(10))     st.dataframe(data.tail(10))
 
